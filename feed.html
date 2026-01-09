@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Feed</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Feed</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- 🔹 TOP BAR -->
+<div class="insta-top">
+  <h3>Socially</h3>
+  <div class="top-icons">
+    <span>❤️</span>
+    <span>✉️</span>
+  </div>
+</div>
+
+<!-- 🔹 STORIES -->
+<div class="stories">
+  <div class="story"><img src="https://i.pravatar.cc/60?img=1"></div>
+  <div class="story"><img src="https://i.pravatar.cc/60?img=2"></div>
+  <div class="story"><img src="https://i.pravatar.cc/60?img=3"></div>
+  <div class="story"><img src="https://i.pravatar.cc/60?img=4"></div>
+  <div class="story"><img src="https://i.pravatar.cc/60?img=5"></div>
+</div>
+
+<!-- 🔹 IMAGE UPLOAD (➕ BUTTON SE OPEN HOGA) -->
+<div class="upload-box" id="uploadBox">
+  <input type="file" accept="image/*" onchange="previewImage(event)">
+  <img id="preview">
+  <button onclick="postImage()">Post</button>
+</div>
+
+<!-- 🔹 POSTS (JS SE AUTO LOAD HONGE) -->
+<div id="posts"></div>
+
+<!-- 🔹 COMMENT MODAL -->
+<div class="comment-modal" id="commentModal">
+  <div class="comment-box">
+    <div class="comment-header">
+      <b>Comments</b>
+      <span onclick="closeComments()">✖</span>
+    </div>
+
+    <div class="comment-list">
+      <p><b>user_amit</b> Nice pic 🔥</p>
+      <p><b>user_neha</b> Awesome 😍</p>
+    </div>
+
+    <div class="comment-input">
+      <input type="text" placeholder="Add a comment...">
+      <button>Post</button>
+    </div>
+  </div>
+</div>
+
+<!-- 🔹 FLOATING BOTTOM NAV -->
+<div class="bottom-nav">
+  <span onclick="goHome()">🏠</span>
+  <span>🔍</span>
+  <span onclick="openUpload()">➕</span>
+  <span onclick="toggleDark()">🌙</span>
+  <span onclick="goProfile()">👤</span>
+</div>
+
+<!-- 🔹 JS (VERY IMPORTANT) -->
+<script src="js/app.js"></script>
+
+</body>
+</html>
+
+
+
